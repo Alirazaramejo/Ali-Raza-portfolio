@@ -19,7 +19,7 @@ const Hero = () => {
   useEffect(() => {
     const getMyProfile = async () => {
       const { data } = await axios.get(
-        "https://porfolio-backend-wheat.vercel.app/api/v1/user/portfolio/me",
+        "https://backend-porfolio-nine.vercel.app/api/v1/user/portfolio/me",
         { withCredentials: true }
       );
       setUser(data.user);
